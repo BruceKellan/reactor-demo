@@ -12,12 +12,18 @@
         <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <guava.version>28.2-jre</guava.version>
         <reactor-core.version>3.0.7.RELEASE</reactor-core.version>
         <reactor-test.version>3.0.7.RELEASE</reactor-test.version>
         <junit.version>5.5.2</junit.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
         <dependency>
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-core</artifactId>
